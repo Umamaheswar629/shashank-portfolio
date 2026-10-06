@@ -10,7 +10,6 @@ import { renderProjectList } from './components/project-list.js';
 import { renderInterests, renderOverlapChart } from './components/charts.js';
 import { renderTimelines } from './components/timeline.js';
 import { renderAchievementList } from './components/sections.js';
-import { renderStatusDock } from './components/status-dock.js';
 import { renderAudioLab } from './components/audio-lab.js';
 import { initHeroScene } from './scenes/hero-scene.js';
 
@@ -105,12 +104,6 @@ const setHeroContent = () => {
     `;
   }
 
-  const dockApplication = document.querySelector('#dock-application');
-  const dockFocus = document.querySelector('#dock-focus');
-  const dockSection = document.querySelector('#dock-section');
-  if (dockApplication) dockApplication.textContent = site.application.program;
-  if (dockFocus) dockFocus.textContent = site.person.field;
-  if (dockSection) dockSection.textContent = 'About';
 };
 
 const initCursor = () => {
@@ -159,7 +152,6 @@ const renderPage = () => {
   renderTimelines(site.experience, 'experience');
   renderTimelines(site.education, 'education');
   renderAchievementList(site.achievements);
-  renderStatusDock();
   initHeroScene();
   revealContent();
 

@@ -99,6 +99,17 @@ p, li, .subhead, .research-stage p, .project-summary, .achievement-item p,
   color: #f4f8ff !important;
 }
 
+.light-panel,
+.light-panel * {
+  color: #000000 !important;
+}
+
+.light-panel .eyebrow,
+.light-panel .section-heading h2,
+.light-panel .bio-copy p {
+  color: #000000 !important;
+}
+
 .section {
   background: rgba(9, 17, 27, 0.94);
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);

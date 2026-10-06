@@ -194,7 +194,7 @@ export const site = {
       degree: 'B.Tech in Electronics & Communication Engineering (ECE)',
       university: 'Engineering Institute',
       location: 'India',
-      dates: '2020 — 2024',
+      dates: '2022 — 2026',
       gpa: 'Qualified degree',
       coursework: ['Electronics', 'Signal processing', 'Communication systems', 'Embedded concepts'],
       achievements: ['Combined engineering rigor with a growing focus on music production and sound design.']
