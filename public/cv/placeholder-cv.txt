@@ -1,0 +1,4 @@
+Placeholder CV
+
+This file is intentionally included so the portfolio's download link works immediately.
+Replace it with your real CV before publishing the portfolio.

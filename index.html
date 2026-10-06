@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Music production and audio engineering portfolio for Shashank." />
+    <meta property="og:title" content="Shashank — Music Production Portfolio" />
+    <meta property="og:description" content="Academic and creative portfolio for graduate study in music production and audio engineering." />
+    <meta property="og:type" content="website" />
+    <title>Shashank — Music Production Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="page-shell">
+      <aside class="nav-rail" aria-label="Primary navigation">
+        <div class="rail-top">
+          <div class="monogram" aria-label="Applicant monogram">//01</div>
+        </div>
+        <nav class="rail-nav" aria-label="Sections">
+          <a href="#about" class="nav-item is-active"><span class="dot"></span><span>About</span></a>
+          <a href="#audio-lab" class="nav-item"><span class="dot"></span><span>Audio</span></a>
+          <a href="#research" class="nav-item"><span class="dot"></span><span>Research</span></a>
+          <a href="#projects" class="nav-item"><span class="dot"></span><span>Projects</span></a>
+          <a href="#experience" class="nav-item"><span class="dot"></span><span>Experience</span></a>
+          <a href="#education" class="nav-item"><span class="dot"></span><span>Education</span></a>
+          <a href="#statement" class="nav-item"><span class="dot"></span><span>Statement</span></a>
+          <a href="#contact" class="nav-item"><span class="dot"></span><span>Contact</span></a>
+        </nav>
+        <div class="rail-status" aria-label="Site status">
+          <span class="led"></span>
+          <span class="status-label">idle</span>
+        </div>
+      </aside>
+
+      <div class="grain" aria-hidden="true"></div>
+      <main id="main-content" class="site-main">
+        <section id="about" class="section hero-section">
+          <div class="hero-content">
+            <p class="eyebrow">Master's application — Music Production / Audio Engineering</p>
+            <h1 class="name-stack" aria-label="Shashank">
+              <span class="name-line">SHA</span>
+              <span class="name-line">SHANK</span>
+            </h1>
+            <p class="tagline">I shape sonic experiences, craft mixes, and turn musical ideas into immersive, emotionally resonant listening.</p>
+            <p class="intro-copy">I am a music producer and audio-focused creative building strong listening experiences through recording, arrangement, mixing, and sound design. My work sits at the intersection of performance, technical precision, and emotional storytelling, with a growing interest in how production choices shape audience perception and musical identity.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#audio-lab">Music</a>
+              <a class="button button-secondary" href="#audio-lab">Play my music</a>
+            </div>
+            <div class="hero-facts" aria-label="Key facts"></div>
+          </div>
+          <div class="hero-visual-wrap">
+            <div class="hero-visual" aria-label="Research visual">
+              <canvas id="hero-canvas"></canvas>
+            </div>
+          </div>
+        </section>
+
+        <section id="audio-lab" class="section audio-lab-section">
+          <div class="section-heading">
+            <p class="eyebrow">Audio references</p>
+            <h2>Mixes, listening tests, and production studies.</h2>
+          </div>
+          <div class="audio-cta-bar" aria-label="Music actions">
+            <a class="button button-primary large-button" href="#audio-lab">PLAY MY MUSIC</a>
+            <a class="button button-secondary large-button" href="#about">BACK TO INTRO</a>
+          </div>
+          <div id="audio-lab-grid" class="audio-lab-grid"></div>
+        </section>
+
+        <section id="research" class="section research-section">
+          <div class="section-heading">
+            <p class="eyebrow">Creative process</p>
+            <h2>Every mix begins with intention.</h2>
+            <p class="subhead">The same process runs through my listening practice, studio work, production experiments, and research interests.</p>
+          </div>
+          <div class="research-pipeline" id="research-pipeline"></div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+          <div class="section-heading">
+            <p class="eyebrow">Selected work</p>
+            <h2>Selected mixes and sound studies.</h2>
+          </div>
+          <div id="project-list" class="project-list"></div>
+        </section>
+
+        <section id="interests" class="section interests-section">
+          <div class="section-heading">
+            <p class="eyebrow">Research interests</p>
+            <h2>What I want to study</h2>
+          </div>
+          <div id="interests-grid" class="interests-grid"></div>
+          <div id="overlap-chart" class="overlap-chart-wrap"></div>
+        </section>
+
+        <section id="experience" class="section experience-section">
+          <div class="section-heading">
+            <p class="eyebrow">Experience</p>
+            <h2>Technical work and research exposure.</h2>
+          </div>
+          <div id="experience-timeline" class="timeline"></div>
+        </section>
+
+        <section id="education" class="section education-section">
+          <div class="section-heading">
+            <p class="eyebrow">Education</p>
+            <h2>Academic foundation.</h2>
+          </div>
+          <div id="education-timeline" class="timeline"></div>
+        </section>
+
+        <section id="achievements" class="section achievements-section">
+          <div class="section-heading">
+            <p class="eyebrow">Achievements</p>
+            <h2>Notable milestones.</h2>
+          </div>
+          <div id="achievement-list" class="achievement-list"></div>
+        </section>
+
+        <section id="research-pubs" class="section pubs-section"></section>
+
+        <section class="section light-panel" id="bio">
+          <div class="section-heading">
+            <p class="eyebrow">Beyond the transcript</p>
+            <h2>Curiosity shapes how I work.</h2>
+          </div>
+          <div class="bio-layout">
+            <div class="bio-copy" id="bio-copy"></div>
+            <div class="photo-card" id="photo-card"></div>
+          </div>
+        </section>
+
+        <section id="statement" class="section statement-section">
+          <div class="section-heading">
+            <p class="eyebrow">Why Master's?</p>
+            <h2>What I want to investigate next.</h2>
+          </div>
+          <div id="statement-grid" class="statement-grid"></div>
+        </section>
+
+        <section id="program-fit" class="section fit-section"></section>
+
+        <section id="contact" class="section contact-section">
+          <div class="contact-panel">
+            <p class="eyebrow">Contact</p>
+            <h2>Let's build what comes next.</h2>
+            <div class="contact-links" id="contact-links"></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="status-dock" id="status-dock" aria-live="polite">
+      <div><span class="dock-label">CURRENT FOCUS</span><strong id="dock-focus">Music Production</strong></div>
+      <div><span class="dock-label">CURRENT SECTION</span><strong id="dock-section">About</strong></div>
+      <div><span class="dock-label">APPLICATION</span><strong id="dock-application">Master's in Music</strong></div>
+      <div><span class="dock-label">PROGRESS</span><strong id="dock-progress">01 / 07</strong></div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

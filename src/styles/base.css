@@ -1,0 +1,227 @@
+html, body {
+  min-height: 100%;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(110, 232, 217, 0.22), transparent 26%),
+    linear-gradient(180deg, #030b13 0%, #0a1522 100%);
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: -0.01em;
+  color: #ffffff;
+  cursor: none;
+}
+
+html, body {
+  background-color: #020b13;
+}
+
+*, *::before, *::after {
+  color: inherit;
+}
+
+body,
+.site-main,
+.section,
+.nav-rail,
+.status-dock,
+.audio-track-card,
+.project-card,
+.research-stage,
+.timeline-content,
+.achievement-item,
+.pub-item,
+.fit-card,
+.statement-card,
+.interest-card,
+.contact-panel,
+.hero-content,
+.hero-section,
+.section-heading,
+.audio-lab-grid,
+.research-pipeline,
+.project-list,
+.achievement-list,
+.timeline,
+.contact-links,
+.contact-panel h2,
+#status-dock,
+#dock-focus,
+#dock-section,
+#dock-application,
+#dock-progress {
+  color: #ffffff !important;
+}
+
+p, li, span, strong, small, em, h1, h2, h3, h4, h5, h6, a, div {
+  color: #ffffff !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.section-heading h2,
+.name-stack,
+.tagline,
+.intro-copy,
+.research-stage h3,
+.project-copy h3,
+.timeline-content h3,
+.achievement-item h3,
+.statement-card h3,
+.pub-item h3,
+.fit-card h3,
+.contact-panel h2,
+.eyebrow,
+.dock-label {
+  color: #ffffff !important;
+}
+
+p, li, .subhead, .research-stage p, .project-summary, .achievement-item p,
+.timeline-content p, .pub-item p, .fit-card p, .bio-copy p,
+.meta-line,
+.project-meta,
+.track-tag,
+.track-index,
+.stage-tag,
+.focus-list span,
+.course-tags span,
+.project-techs span,
+.stage-tags span,
+.achievement-year,
+.interest-index,
+.statement-index,
+.label,
+.tiny-label,
+.status-label,
+.rail-status,
+.nav-item,
+.monogram {
+  color: #f4f8ff !important;
+}
+
+.section {
+  background: rgba(9, 17, 27, 0.94);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+.hero-section {
+  background: rgba(7, 16, 24, 0.96);
+}
+
+@media (pointer: coarse) {
+  body {
+    cursor: auto;
+  }
+}
+
+button, a, input, textarea {
+  transition: all 160ms var(--ease-out);
+}
+
+.page-shell {
+  position: relative;
+  min-height: 100vh;
+}
+
+.site-main {
+  width: min(1360px, calc(100% - 160px));
+  margin-left: 110px;
+  padding: 0 24px 80px;
+}
+
+.section {
+  position: relative;
+  padding: 72px 0;
+  border-top: 1px solid rgba(90, 110, 142, 0.4);
+  background: rgba(11, 17, 29, 0.26);
+}
+
+.section:first-of-type {
+  border-top: none;
+}
+
+.section-heading {
+  max-width: 760px;
+  margin-bottom: 26px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--teal);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.section-heading h2,
+.hero-content h1 {
+  margin: 0;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+}
+
+.section-heading h2 {
+  font-size: clamp(2.8rem, 4vw, 5rem);
+  line-height: 0.92;
+}
+
+.subhead {
+  color: var(--bone-dim);
+  max-width: 640px;
+  margin-top: 12px;
+}
+
+.gain {
+  display: none;
+}
+
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025), rgba(255, 255, 255, 0.025)),
+    url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120"%3E%3Cfilter id="n"%3E%3CfeTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/%3E%3CfeColorMatrix type="saturate" values="0"/%3E%3CfeComponentTransfer%3E%3CfeFuncA type="table" tableValues="0 0.16"/%3E%3C/feComponentTransfer%3E%3C/filter%3E%3Crect width="120" height="120" filter="url(%23n)" opacity="0.75"/%3E%3C/svg%3E');
+  opacity: 0.06;
+  mix-blend-mode: overlay;
+  z-index: 1;
+}
+
+.skip-link {
+  position: absolute;
+  left: 20px;
+  top: -40px;
+  background: var(--bone);
+  color: var(--void);
+  padding: 10px 16px;
+  z-index: 9;
+}
+
+.skip-link:focus {
+  top: 20px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  transition: opacity 420ms var(--ease-out), transform 420ms var(--ease-out);
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
